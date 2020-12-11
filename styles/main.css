@@ -2457,3 +2457,7 @@ ul.links li:hover .bg {
     background-color: #aaa;
   }
 }
+
+    header {background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://shstar-1256209509.cos.ap-tokyo.myqcloud.com/afiles/shstarg/img/banner.jpg);}
+    
+    

@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liunianjia.com</id>
     <title>流年佳</title>
-    <updated>2020-12-25T02:17:41.631Z</updated>
+    <updated>2021-01-02T11:28:10.256Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liunianjia.com"/>
     <link rel="self" href="https://liunianjia.com/atom.xml"/>
     <subtitle>流年里总是诸多美好  岁月却使其散若星辰</subtitle>
     <logo>https://liunianjia.com/images/avatar.png</logo>
     <icon>https://liunianjia.com/favicon.ico</icon>
-    <rights>All rights reserved 2020, 流年佳</rights>
+    <rights>All rights reserved 2021, 流年佳</rights>
     <entry>
         <title type="html"><![CDATA[鸿蒙系统之我见]]></title>
         <id>https://liunianjia.com/post/my-advice-to-HarmonyOS/</id>

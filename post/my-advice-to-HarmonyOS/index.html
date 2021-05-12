@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<meta HTTP-EQUIV="expires" CONTENT="0"> 
+<title>鸿蒙OS之我见 | 流年佳</title>	
+
+<link rel="stylesheet" href="https://liunianjia.com/styles/main.css">
+<script type="text/javascript">
+function getCSS()
+{
+        datetoday = new Date();
+        timenow=datetoday.getTime();
+        datetoday.setTime(timenow);
+        thehour = datetoday.getHours();
+
+            display = "https://liunianjia.com/media/css/night.css";
+
+            display = "https://liunianjia.com/media/css/night.css";   
+      
+            display = "https://liunianjia.com/media/css/day.css";
+
+            display = "https://liunianjia.com/media/css/day.css";
+      
+
+var css = '<';
+        css+='link rel="stylesheet" href='+display+' \/';
+        css+='>';
+        document.write(css);
+}
+</script>
+<link href="https://fonts.geekzu.org/css2?family=Dancing+Script&family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+<link href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css" rel="stylesheet" />
+<link href="https://at.alicdn.com/t/font_2369161_part0vlkb6i.css" rel="stylesheet" />
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://liunianjia.com/media/scripts/script.js'></script>
+<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+  <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/theia-sticky-sidebar@1.7.0/dist/theia-sticky-sidebar.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>wow=new WOW({boxClass:'wow',animateClass:'animated',offset:0,mobile:true,live:true});wow.init();</script>
+
+<script type="text/javascript">
+window.onload=getCSS();
+</script>
+
+
+ 	
+</head>
+<body class="post-template-default single single-post postid-70 single-format-standard ">
+    <div id="wrapper">
+        
+			
+		<header id="header" class="site-header" 
+		
+		style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://liunianjia.com/post-images/my-advice-to-HarmonyOS.jpg)"
+		
+		>
+		<div class="nav-aub">
+			<nav id="nav-wrapper">
+				<div class="container">
+					<div class="nav-toggle">
+						<div class="bars">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<ul id="" class="dove">
+		 
+     			
+<li>
+	 
+	<a  href="/"> 首页</a></li>
+	
+    
+     			
+<li>
+	 
+	<a  href="/archives"> 归档</a></li>
+	
+    
+     			
+<li>
+	 
+	<a  href="/post/about"> 关于</a></li>
+	
+    
+<span class="sousuo_btn" onclick="dashang()" ><i class="iconfont iconsousuo"></i></span>
+</ul>
+</li>		
+		
+</ul>				</div>
+			</nav>
+						<div class="jingge">
+
+
+    
+
+    
+			
+<a  href="https://shstar.github.io" target="_blank" ><i class="iconfont icon-github"></i></a>
+ 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+			
+<a  href="http://wpa.qq.com/msgrd?v=3&amp;uin=80138719&amp;site=qq&amp;menu=yes" target="_blank" ><i class="iconfont icon-qq"></i></a>
+ 
+    
+			
+<a  href="https://weibo.com/u/6569139352" target="_blank" ><i class="iconfont icon-weibo"></i></a>
+ 
+    
+
+    
+</div>
+
+        </header>
+
+		<div id="content" class="container containers">
+			<div class="row">
+	<div class="col-md-8 site-main">
+<div class="post_content">	
+
+<div class="tocc col l3 hide-on-med-and-down">
+	
+        <div class="toc-widget">
+			
+            <div class="toc-title"></div>
+			
+            <div id="toc-content">
+			
+			
+			</div>
+        </div>
+    </div>
+<article id="post-70" class="post-70 post type-post status-publish format-standard hentry category-5 tag-10 tag-9 tag-11">
+
+	
+	                      
+		<div class="entry-content">
+			<h1 class="wow swing entry-title">鸿蒙OS之我见</h1>
+<div class="entry-meta">
+<div class="wow bounce">
+	<i class="iconfont icon-rili"> <time class="lately-a" datetime="2020-12-24 17:22:07" itemprop="datePublished" pubdate="">2020-12-24</time></i>
+	          </div>
+			
+</span>
+													 
+		</div>
+                  
+			<div class="wow slideInLeft entry-summary song">
+				<h2 id="前言">前言</h2>
+<p>这个标题实在是过于狂妄。一个科技圈外的老年人，有什么资格来对国产未来.明日之星.反霸权利器的鸿蒙系统说出什么“我见”来？<br>
+但我是一个消费者，多年的PC/手机用户，华为手机的忠实使用者（虽然后续买不起华为只能买荣耀）我至少还是有权利说说一些个人的观感吧？<br>
+所以就鸿蒙所强调标注的几个点，结合网上的一些无脑喷子的看法，提出一些些疑问，不知道是否有没有专业人士给个答疑解惑？</p>
+<h2 id="高兼容or换皮">高兼容or换皮</h2>
+<p>这个问题应该是最最最多人疑惑的。为什么一个自研系统可以使用其他家的程序？这个我觉得也没什么不好理解的。说到底，安卓也不过是个移动端的Linux系统而已。安卓程序也不过是一些基于Java开发的。所以不要说基于linux开发的类安卓os，就算是在windows的操作系统上也可以用模拟器运行安卓程序，这并不能说鸿蒙就是个换皮安卓。但是如果说是个换汤不换药的linux，我觉得也无甚不可？<br>
+所以这个点根本没什么值得吹或者黑的，当然如果鸿蒙真的牛逼，可以直接使用苹果的app和windows的应用程序，这就值得吹一吹了。全平台兼容才是高科技啊。而且这样的话，鸿蒙的铁粉也不用在无脑黑攻讦鸿蒙是换皮系统是，只能说：谷歌又不是傻子，要是换皮早就来告了。这话乍一听很有道理，但是微软当年打击盗版也不是在盗版刚出生的时候，对吧？</p>
+<h2 id="分布式">分布式</h2>
+<p>在很多很多年前，就有了一个“云”的概念，后来，弹性计算也渐渐的进入人们的视野。按需购买按需使用随时扩展成为了大家习以为常的基础功能。云桌面云电脑扩展坞的组合仿佛明天大家就能抛弃终端随处终端一样。然而……就算是5G基本全覆盖的一线城市，在云技术其实已经非常成熟的今天。手机依然在堆料在跑分。究其原因，不过就是利润使然。<br>
+所以鸿蒙是否解决了这个痛点，做到了一个良心企业所能做的呢？答案是……没有。<br>
+鸿蒙系统并不是全终端云部署，所谓的分布式部署不过就是在原有的普通设备上加上一个系统。试问这个和小米生态的智能家居区别何在？是不需要蓝牙还是不需要wifi以及4/5G？<br>
+按照余总的说法，鸿蒙创新的将各个终端通过鸿蒙连接在一起，将硬件虚拟在一个设备池忠，方便其他设备的调用。请问这个原理和我用安卓手机远程查看家里的小米监控有啥本质性的区别？求高手大能答疑解惑……<br>
+至于那个手机划到华为智慧屏这个操作……我默默地看了眼TNT……满脑门子的问号……<br>
+就我而言，什么是分布式？一言以蔽之：聚沙成塔。1000元的手机安装基本应用，出门旅游，景点门口租一个鸿蒙云台相机，nfc一碰立刻替换手机自带相机。游玩一天有点累，回到酒店，鸿蒙电视开始幻灯片播放今天的照片，全屋音响替代手机的单扬声器播放手机里的音乐。手机用了三年了有点卡，没事，老婆的手机是最新的，复杂的视频编辑比较吃资源，我在自己手机操作，她的手机就自动后台运算工作，我的手机只要显示结果就行了，<br>
+做不到吗？如今的技术，并不难实现吧？为什么不呢？上半年，拍照功能刷新了DXO最高分，涨了10分！下半年最新的cpu，比去年的升级了15%的性能、然后呢？重复消费，周而复始。为什么我们始终纠结于性能迭代，纠结于横向评测，纠结于不知情的性能阉割？为什么不能把运算单元和大容量电池集成在一个如同砖头一样大的可移动主机箱中？平时我用最最最简单功能的手机就行，当我需要复杂工作时，一家人都可以连上运算盒，共享算力。这很难？不过是赚的少罢了吧？</p>
+<h2 id="结语">结语</h2>
+<p>一个成功的公司未必是一个伟大的公司。资本不是慈善，公司不是公益。所有的盈利行为只要不过分都是正常的商业行为。但请不要又做又立，但请不要上升到爱国。将能做的做到最好，尊重用户的智商，让韭菜能多长一会儿再割，会不会，让中华更加有为？哪怕那么一点点？</p>
+
+							</div>
+	<div class="wow bounceInDown vt-post-tags">
+ 
+				<a href="https://liunianjia.com/tag/qDyYsZXV7/" rel="tag">华为</a>	
+				 
+				<a href="https://liunianjia.com/tag/yRXzq5-UzH/" rel="tag">手机</a>	
+				 
+				<a href="https://liunianjia.com/tag/_-gQGzD85P/" rel="tag">鸿蒙</a>	
+				 
+				<a href="https://liunianjia.com/tag/S3JlRGl6zK/" rel="tag">系统</a>	
+				 
+				<a href="https://liunianjia.com/tag/Xkp3nGEbvC/" rel="tag">国产</a>	
+				 
+					</div>						
+<nav class="navigation3 post-navigation3" role="navigation">
+		
+		<div class="nav-links3">
+      
+		<div class="wow bounceInLeft nav-previous3"><a href="https://liunianjia.com/post/zhengshuang-daiyun/" rel="prev"> 郑爽代孕我见</a></div>
+		 
+		 
+		<div class="wow bounceInRight nav-next3"><a href="https://liunianjia.com/post/goodbye-honor/" rel="next"> 七年之痒，荣耀散场</a></div>
+		
+		</div>
+	</nav>
+	<div class="wow rollIn author-info" style="visibility: visible; animation-name: rollIn;">
+	<div class="author-avatar pull-left"><img src="https://liunianjia.com/images/avatar.png" ></div>
+ 
+	<div class="author-description"><div class="author-title"><div class="author-link" rel="author">老顾</div></div>
+
+
+	<p class="author-bio">松柏常青花易败 流年易老人鬓白</p></div></div>
+	
+		</div>
+		
+ 
+		
+</article>
+</div>
+<div id="marlin_lite_about_widget-2" class="wow bounceInUp widget marlin_lite_about_widget" data-wow-delay="0.1s">
+		
+        
+		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://liunianjia.com/media/scripts/Valine.min.js'></script>
+
+<div class="comment"></div>
+<script>
+        new Valine({
+            // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+            av: AV, 
+            el: '.comment',
+            lang: 'zh-cn',
+            
+            admin_email:'kerneg@vip.163.com',
+            
+            
+      emoticon_list: ["吐.png","喷血.png","狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","中指.png","尴尬.png","瞅你.png","想一想.png","中枪.png","得意.png","肿包.png","扇耳光.png","亲亲.png","惊喜.png","脸红.png","无所谓.png","便便.png","愤怒.png","蜡烛.png","献黄瓜.png","内伤.png","投降.png","观察.png","看不见.png","击掌.png","抠鼻.png","邪恶.png","看热闹.png","口水.png","抽烟.png","锁眉.png","装大款.png","吐舌.png","无奈.png","长草.png","赞一个.png","呲牙.png","无语.png","阴暗.png","不出所料.png","咽气.png","期待.png","高兴.png","吐血倒地.png","哭泣.png","欢呼.png","黑线.png","喜极而泣.png","喷水.png","深思.png","鼓掌.png","暗地观察.png"],
+     
+      app_id: 'ftjtq2TrgcpsUy82rntAHKIU-gzGzoHsz',
+      	
+      
+      app_key: 'sjiqP62TaEaPKHEyTRUliSjn',
+         	
+          
+        });
+    </script> 
+
+
+   
+  
+ 
+
+		</div>
+
+			</div>
+			
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '.entry-summary',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('.entry-summary').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>										 
+
+ 
+       
+
+
+			</div>
+		</div>
+
+		
+		 	            <div id="dashang_box">
+                <div class="weixin_mask">
+                    <div onclick="dashang()" class="sap_mask sap_open"></div>
+                    <div class="dashang_frame">
+                       <div class="search_box">
+					   <form id="gridea-search-form" action="https://liunianjia.com/search/">
+                       <input name="q" />
+					   <button type="submit" aria-label="Submit" class="search_bte"><i class="iconfont iconsousuo"></i></button>
+                          </form>
+					   </div>
+                    </div>
+                </div>
+            </div>
+	
+	
+	<footer id="colophon" class="site-footer">
+
+			<div class="container">
+	
+				<div class="copyright">Powered by <a href="https://00sh.com" target="_blank">生活起点</a><br>Theme:   <a href="https://github.com/alterfang/gridea-theme-pan" target="_blank" title="Pan"><span>Pan</span></a>. Powered by <a href="https://gridea.dev/" target="_blank" title="Gridea"><span>Gridea</span></a></div>		
+			</div>
+		
+		</footer>
+
+</div>
+
+<script src="https://cdn.bootcss.com/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+<script type='text/javascript' src='https://liunianjia.com/media/scripts/marlin-scripts.js'></script>
+ <script src="//tokinx.github.io/lately/lately.min.js"></script>
+  <script>jQuery(document).ready(function(){$.lately({'target':'.lately-a,.lately-b,.lately-c'})});</script>
+  <style type="text/css">a.back_to_top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+}
+
+a.back_to_top span {
+    color: #888;
+}
+
+a.back_to_top:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+}
+
+a.back_to_top:hover span {
+    color: #555;
+}
+
+@media print, screen and (max-width: 580px) {
+    .back_to_top {
+        display: none !important;
+    }
+}
+
+
+
+</style><a id="back_to_top" href="#" class="back_to_top"><span><i class="iconfont icon-xiangshang"></i></span>
+</a>
+
+
+<script>$(document).ready((function(_this) {
+  return function() {
+    var bt;
+    bt = $('#back_to_top');
+    if ($(document).width() > 480) {
+      $(window).scroll(function() {
+        var st;
+        st = $(window).scrollTop();
+        if (st > 30) {
+          return bt.css('display', 'block');
+        } else {
+          return bt.css('display', 'none');
+        }
+      });
+      return bt.click(function() {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    }
+  };
+})(this));
+
+lazyload();
+
+function dashang(){
+  $("#dashang_box").fadeToggle(0);
+}
+</script>
+
+		<script>
+
+			jQuery(document).ready(function() {
+    jQuery('#post-70,.tocc').theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 0
+    });
+  });
+  
+    (function ($) {
+        $.extend({
+            adamsOverload: function () {
+                $('.navigation:eq(0)').remove();
+                $("").attr("rel" , "external");
+                $("a[rel='external'],a[rel='external nofollow']").attr("target","_blank");
+                $("a.vi").attr("rel" , "");
+                $.viewImage({
+                    'target'  : 'img',
+                    'exclude' : '.vsmile-icons img,.gallery img',
+                    'delay'   : 300
+                });
+                $.lately({
+                    'target' : '.commentmetadata a,.infos time,.post-list time'
+                });
+                prettyPrint();
+                
+                $('ul.links li a').each(function(){
+                    if($(this).parent().find('.bg').length==0){
+                        $(this).parent().append('<!---<div class="bg" style="background-image:url(https://c3.glgoo.top/s2/favicons?domain='+$(this).attr("href")+')"></div>--->')
+                    }
+                });
+            }
+        });
+    })(jQuery);
+    jQuery.adamsOverload();
+
+
+
+</script>
+
+</body>
+</html>
